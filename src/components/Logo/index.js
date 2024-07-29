@@ -1,5 +1,5 @@
 import './index.scss';
-import bannerLogo from '../../assets/images/banner-logo.png'
+import bannerLogo from '../../assets/images/banner-logo-two.jpg'
 
 const Logo = () => {
     return (
