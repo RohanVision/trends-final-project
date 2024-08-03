@@ -21,17 +21,15 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault()
 
-        emailjs
-            .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
-            .then(
-                () => {
-                    alert('Message successfully sent!')
-                    window.location.reload(false)
-                },
-                () => {
-                    alert('Failed to send the message, please try again')
-                }
-            )
+
+        emailjs.sendForm('service_wi734nd', 'template_8rr7job', form.current, 'yVXkrFVAMWAQWobhV').then(
+            (response) => {
+                alert('SUCCESS!', response.status, response.text);
+            },
+            (error) => {
+                alert('FAILED...', error);
+            },
+        );
     }
     // EmailJS function
 
