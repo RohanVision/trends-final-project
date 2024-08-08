@@ -1,0 +1,114 @@
+.about-us-page {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    overflow: auto;
+
+    .text-zone {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        padding-bottom: 80px; 
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 48px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        color: #fff;
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 20px;
+        font-family: sans-serif;
+        letter-spacing: 2px;
+    }
+
+    h3 {
+        color: #fff;
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    p {
+        color: #bdbdbd;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+
+    
+    .team-section {
+        margin-top: 30px;
+    
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    
+        .team-member {
+            flex: 1 1 calc(25% - 20px); 
+            text-align: center;
+    
+            img {
+                width: 150px; 
+                height: 150px; 
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+    
+            h3 {
+                color: #ff0039;
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+    
+            p {
+                color: #bdbdbd;
+                font-size: 14px;
+                margin: 0;
+            }
+        }
+    }    
+
+    .flat-button {
+        color: #ff0039;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 12px 20px;
+        border: 1px solid #ff0039;
+        margin-top: 15px;
+        position: relative;
+        z-index: 1; 
+
+        &:hover {
+            background: #ff0039;
+            color: #ffffff;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .about-us-page {
+        padding: 20px;
+
+        .text-zone {
+            width: 100%;
+            padding: 20px;
+            padding-bottom: 80px; 
+        }
+    }
+}
