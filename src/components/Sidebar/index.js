@@ -45,7 +45,7 @@ const Sidebar = () => {
                     className='close-icon' />
             </nav>
             <ul>
-                <li>
+                {/* <li>
                     <a target='_blank' rel='noreferrer' href='#'>
                         <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
                     </a>
@@ -59,7 +59,7 @@ const Sidebar = () => {
                     <a target='_blank' rel='noreferrer' href='#'>
                         <FontAwesomeIcon icon={faInstagram} color='#4d4d4e' />
                     </a>
-                </li>
+                </li> */}
             </ul>
             <FontAwesomeIcon
                 onClick={() => setShowNav(true)}
