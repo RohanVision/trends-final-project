@@ -7,12 +7,12 @@
   flex: 1;
 
   .text-zone {
-      margin-bottom: 40px;
-      flex: 0.4;
+    margin-bottom: 40px;
+    flex: 0.4;
 
     p {
-        font-size: 1.2rem;
-        color: #dddddd;
+      font-size: 1.6rem;
+      color: #dddddd;
     }
   }
 
@@ -21,75 +21,75 @@
     margin-right: 20px;
 
     .team-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: flex-end;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-end;
 
-        .team-member {
-            background: #333;
-            padding: 20px;
-            margin: 20px;
-            border-radius: 10px;
-            text-align: center;
-            width: 250px;
-            transition: transform 0.3s;
-            cursor: pointer;
+      .team-member {
+        background: #333;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 250px;
+        transition: transform 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+
+        .profile-pic {
+          border-radius: 5%;
+          width: 100px;
+          height: 100px;
+          margin-bottom: 15px;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+          color: #f05454;
+          margin-bottom: 10px;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+          color: #aaaaaa;
+          margin-bottom: 15px;
+        }
+
+        p {
+          font-size: 1rem;
+          color: #dddddd;
+        }
+
+        .social-links {
+          a {
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            transition: color 0.3s;
 
             &:hover {
-                transform: scale(1.05);
+              color: #000;
             }
-
-            .profile-pic {
-                border-radius: 5%;
-                width: 100px;
-                height: 100px;
-                margin-bottom: 15px;
-            }
-
-            h2 {
-                font-size: 1.5rem;
-                color: #f05454;
-                margin-bottom: 10px;
-            }
-
-            h3 {
-                font-size: 1.2rem;
-                color: #aaaaaa;
-                margin-bottom: 15px;
-            }
-
-            p {
-                font-size: 1rem;
-                color: #dddddd;
-            }
-
-            .social-links {
-                a {
-                    margin: 0 0.5rem;
-                    font-size: 1.5rem;
-                    transition: color 0.3s;
-
-                    &:hover {
-                        color: #000;
-                    }
-                }
-            }
+          }
         }
+      }
     }
   }
 
   // media queries
   @media screen and (max-width: 1200px) {
     .right-container {
-        margin-left: 0;
+      margin-left: 0;
     }
-}
+  }
 
-// small devices
-@media screen and (max-width: 768px) {
+  // small devices
+  @media screen and (max-width: 768px) {
     .right-container {
-        margin-left: 0;
+      margin-left: 0;
     }
-}
+  }
 }

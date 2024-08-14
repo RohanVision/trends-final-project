@@ -1,19 +1,18 @@
 import './index.scss';
 import { useState } from 'react';
+import siteLogo from "../../assets/images/webverve-logo.png"
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faClose, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
     const [showNav, setShowNav] = useState(false);
     return (
         <div className='nav-bar'>
             <Link className="logo" to='/' >
-                {/* <img src={LogoS} alt='logo' />
-                <img className='sub-logo' src={LogoSubtitle} alt='subtitle' /> */}
-                Trends Developer
+                <img src={siteLogo} alt='WebVerve' />
             </Link>
+
             <nav className={showNav ? 'mobile-show' : ''}>
                 <NavLink
                     exact="true"
@@ -40,31 +39,14 @@ const Sidebar = () => {
                 <FontAwesomeIcon
                     onClick={() => setShowNav(false)}
                     icon={faClose}
-                    color="#ffd700"
+                    color="#ff0039"
                     size="3x"
                     className='close-icon' />
             </nav>
-            <ul>
-                {/* <li>
-                    <a target='_blank' rel='noreferrer' href='#'>
-                        <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
-                    </a>
-                </li>
-                <li>
-                    <a target='_blank' rel='noreferrer' href='#'>
-                        <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
-                    </a>
-                </li>
-                <li>
-                    <a target='_blank' rel='noreferrer' href='#'>
-                        <FontAwesomeIcon icon={faInstagram} color='#4d4d4e' />
-                    </a>
-                </li> */}
-            </ul>
             <FontAwesomeIcon
                 onClick={() => setShowNav(true)}
                 icon={faBars}
-                color="#ffd700"
+                color="#ff0039"
                 size="3x"
                 className='hamburger-icon' />
         </div>

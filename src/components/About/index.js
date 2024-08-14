@@ -63,9 +63,22 @@ const About = () => {
           <h1>
             <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'U', 's']} index={15} />
           </h1>
-          <p>Meet the team that makes everything possible. We are passionate, dedicated, and ready to tackle any challenge.</p>
+          <p>At WebVerve, we are more than just a group of web developers—we are a passionate, dedicated team of innovators and problem-solvers. Our expertise spans the latest web technologies, ensuring that we deliver cutting-edge solutions that drive success for our clients.
+          </p>
+
+          <p>
+            Every member of our team brings unique skills and perspectives to the table, allowing us to tackle any challenge with creativity and precision. Whether it's crafting seamless user experiences, building responsive websites, or developing complex applications, we work collaboratively to exceed expectations and bring your vision to life.
+          </p>
+
+          <p>
+            We are committed to continuous learning and staying ahead of industry trends, so we can offer our clients the best solutions available. From the initial concept to the final deployment, we approach every project with the same enthusiasm and dedication, making sure that every detail is perfect.
+          </p>
+
+          <p>
+            Let us help you turn your ideas into reality. Meet the team that is ready to make your digital dreams come true.
+          </p>
         </div>
-      </div>
+      </div >
       <div className='right-container'>
         <div className="team-section">
           {teamMembers.map((member, index) => (
@@ -89,7 +102,7 @@ const About = () => {
           ))}
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
