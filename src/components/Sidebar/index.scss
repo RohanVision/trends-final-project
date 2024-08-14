@@ -19,10 +19,6 @@
       margin: 8px auto;
       width: 60px;
       height: auto;
-
-      &.sub-logo {
-        width: 50px;
-      }
     }
   }
 
@@ -78,6 +74,11 @@
         &:after {
           content: 'HOME';
         }
+      }
+    }
+    a.projects-link {
+      &:after {
+        content: 'PROJECTS';
       }
     }
 
@@ -147,9 +148,17 @@
     height: 60px;
 
     .logo {
-      font-size: 20px;
-      display: inline-block;
-      padding: 20px 15px;
+      display: block;
+      padding: 8px 0;
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+
+      img {
+        width: 100%;
+        max-width: 100px;
+        padding: 1rem 0;
+      }
     }
     ul,
     nav {

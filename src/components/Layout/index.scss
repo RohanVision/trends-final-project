@@ -39,6 +39,7 @@
 }
 
 .container.contact-page,
+.container.projects-page,
 .container.about-page,
 .container.portfolio-page {
   h1 {
@@ -114,6 +115,9 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .container {
+    width: auto;
+  }
   .page {
     position: initial;
   }
@@ -125,7 +129,8 @@
 
     &.contact-page,
     &.about-page,
-    &.portfolio-page {
+    &.portfolio-page,
+    &.container.projects-page {
       .text-zone {
         position: initial;
         transform: none;

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import siteLogo from "../../assets/images/webverve-logo.png"
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faClose, faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faClose, faEnvelope, faHome, faProjectDiagram, faUser } from '@fortawesome/free-solid-svg-icons'
 
 const Sidebar = () => {
     const [showNav, setShowNav] = useState(false);
@@ -20,6 +20,14 @@ const Sidebar = () => {
                     to="/"
                     onClick={() => setShowNav(false)}>
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+                </NavLink>
+                <NavLink
+                    activeclassname="active"
+                    className="projects-link"
+                    to="/projects"
+                    onClick={() => setShowNav(false)}
+                >
+                    <FontAwesomeIcon icon={faProjectDiagram} color="#4d4d4e" />
                 </NavLink>
                 <NavLink
                     activeclassname="active"

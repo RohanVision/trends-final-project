@@ -3,6 +3,10 @@ import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import rohanImage from '../../assets/images/rohan.jpg'
+import kaushalImage from '../../assets/images/kaushal.png'
+import sanjanaImage from '../../assets/images/sanjana.jpg'
+import utsavImage from '../../assets/images/utsav.jpg'
 
 
 const About = () => {
@@ -22,7 +26,7 @@ const About = () => {
       name: 'Rohan Amberkar',
       role: 'Frontend Developer',
       bio: 'Rohan is an expert in React and CSS with a passion for creating intuitive user interfaces.',
-      imageSrc: '/rohan.jpg',
+      imageSrc: rohanImage,
       linkedin: '#',
       github: '#',
       twitter: '#'
@@ -31,7 +35,7 @@ const About = () => {
       name: 'Kaushal Koladiya',
       role: 'Full-stack Developer',
       bio: 'Kaushal specializes in Node.js and database management, ensuring smooth server-side operations.',
-      imageSrc: '/kaushal.png',
+      imageSrc: kaushalImage,
       linkedin: 'https://www.linkedin.com/in/kaushalkoladiya/',
       github: 'https://github.com/kaushalkoladiya',
       twitter: 'https://x.com/kaushalkoladiya'
@@ -40,7 +44,7 @@ const About = () => {
       name: 'Sanjana Domadiya',
       role: 'UI/UX Designer',
       bio: 'Sanjana designs beautiful and user-friendly interfaces, focusing on enhancing user experience.',
-      imageSrc: '/sanjana.jpg',
+      imageSrc: sanjanaImage,
       linkedin: '#',
       github: '#',
       twitter: '#'
@@ -49,7 +53,7 @@ const About = () => {
       name: 'Utsavkumar Padariya',
       role: 'DevOps Engineer',
       bio: 'Utsavkumar manages our infrastructure, ensuring that our applications run smoothly and efficiently.',
-      imageSrc: '/utsav.jpg',
+      imageSrc: utsavImage,
       linkedin: '#',
       github: '#',
       twitter: '#'
